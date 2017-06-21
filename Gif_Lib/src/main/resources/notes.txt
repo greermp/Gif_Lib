@@ -1,0 +1,37 @@
+Spring Components
+-Core component
+    - Beans, Core, Context, SpEL
+        - Beans- allows any java object to be created and used in the servlet container
+        -Context- Gives us annotations we can leverage to configure our app
+            @configuration- Applies to classes containing application configuration code
+            @Controller- Applied to a class that can handle request to specific URIs
+            @ComponentScan- Tells spring framework to scan java classes for things like controllers
+        -SpEL- Spring Expression Language
+            -Can put to use in HTML templates that allows us to iterate over, perform operations with, and format java data for display
+        -AOP- aspect oriented programming
+            - Allows us to cleanly apply functionality to many or all parts of web app, such as security check to verify user logged in before performing tasks
+-Web Container
+    -Servlet Container
+    -Dispatcher Servlet- applications usher, there to recieve requests from web server, and dispatch according to our code
+        -Also ushers responses back to the server, which sends it back to the client
+    -Web Component- Captures requests to a specific resource, and takes action accordingly
+        -Capture URIs and respond with pages
+
+
+
+ Controller- Java object that handles requests to URIs.  Annotations indicate which URIs they should handle
+
+ HTTP Request to web server - server sends it to our application - dispatcher servlet receives request, and URI is
+  examined - from URI, dispatcher decides which of its controllers, and which of its controllers methods is
+  mapped to the URI requested by using the @RequestMapping annotation.  Mapped controller method is then called,
+  data is fed to a spring view resolver -> goes to thymeleaf template - final HTML product sent to dispatcher servlet,
+  back to teh dispatcher, back to the web server, when sends the response back to the client with the HTML in the body
+
+
+  MVC
+
+  Model- store underlying data (GIF)
+
+  Controller- Process user actions- fetching and altering underlying model data as needed, then providing model data to views (Gif controller)
+
+  View- present model data to user, provide a way for user to interact with the data (thymeleaf)
