@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/class-voter.iml" filepath="$PROJECT_DIR$/.idea/modules/class-voter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/class-voter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/class-voter_main.iml" group="class-voter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/class-voter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/class-voter_test.iml" group="class-voter" />
+    </modules>
+  </component>
+</project>
